@@ -1,4 +1,4 @@
-<h1>Database Project for **Inserati aici numele aplicatiei pe care o testati**</h1>
+<h1>Database Project for **Bookstore**</h1>
 
 The scope of this project is to use all the SQL knowledge gained throught the Software Testing course and apply them in practice.
 
@@ -30,7 +30,40 @@ The tables are connected in the following way:
 
   The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
 
-  **Inserati aici toate instructiunile de CREATE pe care le-ati scris, atat create database cat si create table**
+         #Cream baza de date 
+         CREATE DATABASE Bookstore;
+
+         USE Bookstore;
+
+        #Cream tabelele bazei de date
+        CREATE TABLE Books (
+        ID INT AUTO_INCREMENT PRIMARY KEY,
+        Author VARCHAR(255),
+        Title VARCHAR(255),
+        Release_year YEAR,
+        Type VARCHAR(50),
+        Price DECIMAL(10,2)
+        );
+
+        CREATE TABLE Customers (
+        ID INT AUTO_INCREMENT PRIMARY KEY,
+        First_name VARCHAR(50),
+        Last_name VARCHAR(50),
+        Phone VARCHAR(10)
+        );
+
+        CREATE TABLE Orders (
+        Customer_ID INT,
+        Books_ordered VARCHAR(255),
+        Quantity INT,
+        Status_Order VARCHAR(50)
+        );
+
+        CREATE TABLE Subscriptions (
+        Start_date DATE,
+        End_date DATE,
+        Customer_ID INT
+        );
 
   After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
 
