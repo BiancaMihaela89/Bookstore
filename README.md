@@ -6,7 +6,13 @@ Application under test: **Inserati aici numele aplicatiei pe care o testati**
 
 Tools used: MySQL Workbench
 
-Database description: I created a database named "Bookstore," which contains four tables with information about Books, Customers, Orders, and Subscriptions. To establish links between tables, I set primary keys and foreign keys as follows:
+Database description: 
+The Bookstore database is designed to manage the operations of a bookstore, including inventory, customer information, orders, and subscriptions. It serves as a central repository for storing and organizing data related to books, customers, their orders, and subscription details. The database stores essential information such as book titles, authors, publication years, customer names, contact details, order details, and subscription durations. With this database, bookstore administrators can effectively manage their inventory, track customer orders, and monitor subscription services.
+
+
+<ol>
+<li>Database Schema </li>
+<br>
 
 | Books | Customers   | Orders| Customer_Subscription |
 | :-----: | :---: | :---:  |:---: |
@@ -17,11 +23,10 @@ Database description: I created a database named "Bookstore," which contains fou
 | ReleaseYear| Phone_number|  Status_Orders |   VIP    |
 | Price|    |      |    |
 
-
-<ol>
-<li>Database Schema </li>
-<br>
+  
 You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them.
+
+
 
 The tables are connected in the following way:
 
