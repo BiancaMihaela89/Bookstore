@@ -26,8 +26,9 @@ The Bookstore database is designed to manage the operations of a bookstore, incl
   
 You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them.
 
-![EEG Diagram]
-("https://github.com/BiancaMihaela89/Bookstore/blob/main/EEG%20Diagram.png")
+https://github.com/BiancaMihaela89/Bookstore/blob/main/EEG%20Diagram.png
+
+![EEG Diagram](https://github.com/BiancaMihaela89/Bookstore/assets/149070909/4ed239df-0f74-4277-aef7-a07a1b5e6554)
 
 The tables are connected in the following way:
 
