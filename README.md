@@ -30,50 +30,74 @@ The tables are connected in the following way:
 
   The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
 
-         #Cream baza de date 
-         CREATE DATABASE Bookstore;
+       #Creare baza de date
+        CREATE DATABASE  Bookstore;
 
+        #Folosirea bazei de date create
          USE Bookstore;
 
-        #Cream tabelele bazei de date
-        CREATE TABLE Books (
-        ID INT AUTO_INCREMENT PRIMARY KEY,
-        Author VARCHAR(255),
-        Title VARCHAR(255),
-        Release_year YEAR,
-        Type VARCHAR(50),
-        Price DECIMAL(10,2)
-        );
+        #Creare tabela pentru informatii despre carti  
+         CREATE TABLE  Books (
+         ID INT AUTO_INCREMENT PRIMARY KEY,
+         Author VARCHAR(100),
+         Title VARCHAR(100),
+         Type_Books VARCHAR(100)
+         );
 
+       #Creare tabela pentru informatii despre clienti  
         CREATE TABLE Customers (
         ID INT AUTO_INCREMENT PRIMARY KEY,
-        First_name VARCHAR(50),
-        Last_name VARCHAR(50),
-        Phone VARCHAR(10)
+        Book_id INT,
+        First_Name VARCHAR(100),
+        Last_Name VARCHAR(100),
+        Phone VARCHAR(10),
+        FOREIGN KEY (Book_id) REFERENCES Books(ID)
         );
 
+       #Creare tabela pentru informatii despre comenzi
         CREATE TABLE Orders (
-        Customer_ID INT,
-        Books_ordered VARCHAR(255),
+        ID INT AUTO_INCREMENT PRIMARY KEY,
+        Customer_id INT,
+        Books_ordered VARCHAR(100),
         Quantity INT,
-        Status_Order VARCHAR(50)
+        Status_Orders VARCHAR(50),
+        FOREIGN KEY (Customer_id) REFERENCES Customers(ID)
         );
 
-        CREATE TABLE Subscriptions (
-        Start_date DATE,
-        End_date DATE,
-        Customer_ID INT
-        );
+      #Creare tabela pentru informatii despre abonamente
+       CREATE TABLE  Subscription (
+       ID INT AUTO_INCREMENT PRIMARY KEY,
+       Start_Date DATE,
+       End_Date DATE,
+       Customer_Id INT,
+       FOREIGN KEY (Customer_id) REFERENCES Customers(ID)
+       );
 
   After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
 
-  **Inserati aici toate instructiunile de ALTER pe care le-ati scris. Incercati sa includeti instructiuni cat mai variate cum ar fi:**
- **- schimbare nume tabela**
- **- adaugare sau stergere coloana**
- **- redenumire coloana**
- **- adaugare proprietati coloana (ex: adaugare auto-increment)**
- **- modificare proprietati coloana (ex: modificare tip de data, modificare pozitie coloana etc)**
- **- adaugare cheie primara sau secundara (daca nu a fost deja adaugata la crearea tabelei)**
+       #Instructiuni ALTER
+
+       #Adaugam coloane
+        ALTER TABLE Subscription ADD COLUMN VIP bool;
+        ALTER TABLE Books ADD COLUMN Release_Year int;
+
+       #Schimbare nume coloanei "Release_Year" in "ReleaseYear" in tabela Books
+        ALTER TABLE Books CHANGE COLUMN Release_Year  ReleaseYear INT;
+
+       #Adaugare coloana "Price" de tip DECIMAL in tabela Books
+        ALTER TABLE Books ADD COLUMN Price DECIMAL(10,2);
+
+      #Stergere coloana "Type_Books" din tabela Books
+       ALTER TABLE Books DROP COLUMN Type_Books;
+
+      #Redenumirea coloanei "Phone" in "Phone_number" in tabela Customers si modificarea tipului de date
+       ALTER TABLE Customers CHANGE COLUMN Phone Phone_number int;
+
+      #Modificarea  coloanei "Title" in tabela Books, va fi VARCHAR (255)
+       ALTER TABLE Books MODIFY Title VARCHAR (255);
+
+      #Redenumirea unei tabele
+       ALTER TABLE Subscription RENAME TO Customer_Subscription;
  
   
   <li>DML (Data Manipulation Language)</li>
