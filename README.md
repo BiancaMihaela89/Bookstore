@@ -6,7 +6,17 @@ Application under test: **Inserati aici numele aplicatiei pe care o testati**
 
 Tools used: MySQL Workbench
 
-Database description: **Inserati aici o scurta descriere a bazei de date care sa contina scopul ei, informatiile generale pe care le veti salva si orice alte informatii considerati ca sunt relevante pentru o descriere**
+Database description: I created a database named "Bookstore," which contains four tables with information about Books, Customers, Orders, and Subscriptions. To establish links between tables, I set primary keys and foreign keys as follows:
+
+| Books | Customers   | Orders| Customer_Subscription |
+| :-----: | :---: | :---:  |:---: |
+| PK ID | PK ID |      PK ID            |PK ID|
+| Author| FK Books_id |FK Customer_id |Start_Date|
+| Title| First_Name | Books_ordered|End_Date|
+| Type_Books| Last_Name | Quantity |FK Custormer_Id|
+| ReleaseYear| Phone_number|  Status_Orders |   VIP    |
+| Price|    |      |    |
+
 
 <ol>
 <li>Database Schema </li>
@@ -251,8 +261,8 @@ In order to simulate various scenarios that might happen in real life I created 
 
 </ol>
 
-<li>Conclusions</li>
+<li>**Conclusions**</li>
 
-**Through this database project for a **Bookstore**, I have applied various SQL concepts and gained practical knowledge about creating, modifying, and querying databases. I have learned to use statements such as CREATE, ALTER, INSERT, UPDATE, DELETE, and SELECT to manipulate data and extract relevant information. Additionally, I have understood the importance of relationships between tables and explored different methods to perform complex queries to address various business requirements. This project has helped me consolidate my practical skills in SQL and better understand how databases are used in software development.
+Through this database project for a **Bookstore**, I have applied various SQL concepts and gained practical knowledge about creating, modifying, and querying databases. I have learned to use statements such as CREATE, ALTER, INSERT, UPDATE, DELETE, and SELECT to manipulate data and extract relevant information. Additionally, I have understood the importance of relationships between tables and explored different methods to perform complex queries to address various business requirements. This project has helped me consolidate my practical skills in SQL and better understand how databases are used in software development.
 
 </ol>
