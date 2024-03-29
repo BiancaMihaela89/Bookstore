@@ -34,7 +34,8 @@ The tables are connected in the following way:
   <li> **Orders**  is connected with **Customers** through a **one-to-many** relationship which was implemented through **Customers.ID** as a primary key and **Orders.Customer_id** as a foreign key.The relationship shows that a customer can place several orders (multiple orders), but one order is assigned to a single customer (one customer).</li>
   <li> **Customers**  is connected with **Customer_Subscriptions** through a **one-to-many** relationship which was implemented through **Customers.ID** as a primary key and **Customer_Subscriptions.Custoer_Id** as a foreign key.The relationship shows that a customer can have several active subscriptions (multiple subscriptions), but a subscription is associated with a single customer (single customer).</li>
 
-These links allow for a coherent integration of data between tables and facilitate the management of relationships between books, customers, orders, and subscriptions within the Bookstore.
+<li>These links allow for a coherent integration of data between tables and facilitate the management of relationships between books, customers, orders, and subscriptions within the Bookstore.
+</li>
 
 </ul><br>
 
