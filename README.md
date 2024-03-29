@@ -30,10 +30,11 @@ You can find below the database schema that was generated through Reverse Engine
 The tables are connected in the following way:
 
 <ul>
-  <li> **Books**  is connected with **Customers** through a **one-to-many** relationship which was implemented through **Books.ID** as a primary key and **Customers.Books_id** as a foreign key</li>
-  <li> **Orders**  is connected with **Customers** through a **one-to-many** relationship which was implemented through **Customers.ID** as a primary key and **Orders.Customer_id** as a foreign key</li>
-  <li> **Customers**  is connected with **Customer_Subscriptions** through a **one-to-many** relationship which was implemented through **Customers.ID** as a primary key and **Customer_Subscriptions.Custoer_Id** as a foreign key</li>
+  <li> **Books**  is connected with **Customers** through a **one-to-many** relationship which was implemented through **Books.ID** as a primary key and **Customers.Books_id** as a foreign key. The relationship shows that one book can be purchased by several customers (many customers), and one customer can purchase several books (many books). </li>
+  <li> **Orders**  is connected with **Customers** through a **one-to-many** relationship which was implemented through **Customers.ID** as a primary key and **Orders.Customer_id** as a foreign key.The relationship shows that a customer can place several orders (multiple orders), but one order is assigned to a single customer (one customer).</li>
+  <li> **Customers**  is connected with **Customer_Subscriptions** through a **one-to-many** relationship which was implemented through **Customers.ID** as a primary key and **Customer_Subscriptions.Custoer_Id** as a foreign key.The relationship shows that a customer can have several active subscriptions (multiple subscriptions), but a subscription is associated with a single customer (single customer).</li>
 </ul><br>
+These links allow for a coherent integration of data between tables and facilitate the management of relationships between books, customers, orders, and subscriptions within the Bookstore.
 
 <li>Database Queries</li><br>
 
