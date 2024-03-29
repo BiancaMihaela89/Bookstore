@@ -14,7 +14,7 @@ For preparing the MySQL environment you need to follow the steps below:
 Database description: 
 The Bookstore database is designed to manage the operations of a bookstore, including inventory, customer information, orders, and subscriptions. It serves as a central repository for storing and organizing data related to books, customers, their orders, and subscription details. The database stores essential information such as book titles, authors, publication years, customer names, contact details, order details, and subscription durations. With this database, bookstore administrators can effectively manage their inventory, track customer orders, and monitor subscription services.
 
-
+<br>
 <ol>
 <li>Database Schema </li>
 <br>
