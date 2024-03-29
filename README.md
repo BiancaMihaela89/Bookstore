@@ -4,6 +4,13 @@ The scope of this project is to use all the SQL knowledge gained throught the So
 
 Tools used: MySQL Workbench
 
+For preparing the MySQL environment you need to follow the steps below:
+</ol>
+<li>  Download MySQL Workbench from here: https://dev.mysql.com/downloads/workbench/  </li>
+<li> Download MySQL Server from here: https://download.cnet.com/MySQL-Database-Server/3000-10254_4-10585640.html </li>
+<li> Note: Some installation require Microsoft Visual C++ installation. You download It here: https://visualstudio.microsoft.com/en/downloads/ </li>
+</ol>
+
 Database description: 
 The Bookstore database is designed to manage the operations of a bookstore, including inventory, customer information, orders, and subscriptions. It serves as a central repository for storing and organizing data related to books, customers, their orders, and subscription details. The database stores essential information such as book titles, authors, publication years, customer names, contact details, order details, and subscription durations. With this database, bookstore administrators can effectively manage their inventory, track customer orders, and monitor subscription services.
 
