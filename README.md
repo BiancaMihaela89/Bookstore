@@ -36,6 +36,7 @@ The tables are connected in the following way:
 </ul><br>
 These links allow for a coherent integration of data between tables and facilitate the management of relationships between books, customers, orders, and subscriptions within the Bookstore.
 
+
 <li>Database Queries</li><br>
 
 <ol type="a">
