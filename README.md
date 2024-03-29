@@ -246,7 +246,7 @@ In order to simulate various scenarios that might happen in real life I created 
      #Afisarea prețului mediu al cărților din tabela Books
       SELECT AVG(Price) FROM Books;
 
-     #Afisarea cărților după autor și va calcula prețul mediu al cărților pentru fiecare autor.
+     #Afisarea cărților după autor și prețul mediu al cărților pentru fiecare autor.
       SELECT Author, AVG(Price) 
       FROM Books
       GROUP BY Author;
