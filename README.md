@@ -272,7 +272,7 @@ In order to simulate various scenarios that might happen in real life I created 
 
 </ol>
 
-<li>**Conclusions**</li>
+<li>Conclusions</li>
 
 Through this database project for a **Bookstore**, I have applied various SQL concepts and gained practical knowledge about creating, modifying, and querying databases. I have learned to use statements such as CREATE, ALTER, INSERT, UPDATE, DELETE, and SELECT to manipulate data and extract relevant information. Additionally, I have understood the importance of relationships between tables and explored different methods to perform complex queries to address various business requirements. This project has helped me consolidate my practical skills in SQL and better understand how databases are used in software development.
 
