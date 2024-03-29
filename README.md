@@ -2,8 +2,6 @@
 
 The scope of this project is to use all the SQL knowledge gained throught the Software Testing course and apply them in practice.
 
-Application under test: **Inserati aici numele aplicatiei pe care o testati**
-
 Tools used: MySQL Workbench
 
 Database description: 
@@ -26,18 +24,15 @@ The Bookstore database is designed to manage the operations of a bookstore, incl
   
 You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them.
 
-https://github.com/BiancaMihaela89/Bookstore/blob/main/EEG%20Diagram.png
 
 ![EEG Diagram](https://github.com/BiancaMihaela89/Bookstore/assets/149070909/4ed239df-0f74-4277-aef7-a07a1b5e6554)
 
 The tables are connected in the following way:
 
 <ul>
-  <li> **nume tabela 1**  is connected with **nume tabela 2** through a **tip relatie** relationship which was implemented through **nume_tabela.nume_coloana_cheie_primara** as a primary key and **nume_tabela.nume_coloana_cheie_secundara** as a foreign key</li>
-  <li> **nume tabela 3**  is connected with **nume tabela 4** through a **tip relatie** relationship which was implemented through **nume_tabela.nume_coloana_cheie_primara** as a primary key and **nume_tabela.nume_coloana_cheie_secundara** as a foreign key</li>
-  <li> **nume tabela 5**  is connected with **nume tabela 6** through a **tip relatie** relationship which was implemented through **nume_tabela.nume_coloana_cheie_primara** as a primary key and **nume_tabela.nume_coloana_cheie_secundara** as a foreign key</li>
-  ...........
-  <li> **nume tabela n**  is connected with **nume tabela n+1** through a **tip relatie** relationship which was implemented through **nume_tabela.nume_coloana_cheie_primara** as a primary key and **nume_tabela.nume_coloana_cheie_secundara** as a foreign key</li>
+  <li> **Books**  is connected with **Customers** through a **one-to-many** relationship which was implemented through **Books.ID** as a primary key and **Customers.Books_id** as a foreign key</li>
+  <li> **Orders**  is connected with **Customers** through a **one-to-many** relationship which was implemented through **Customers.ID** as a primary key and **Orders.Customer_id** as a foreign key</li>
+  <li> **Customers**  is connected with **Customer_Subscriptions** through a **one-to-many** relationship which was implemented through **Customers.ID** as a primary key and **Customer_Subscriptions.Custoer_Id** as a foreign key</li>
 </ul><br>
 
 <li>Database Queries</li><br>
