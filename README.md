@@ -52,8 +52,9 @@ These links allow for a coherent integration of data between tables and facilita
 
   The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
 
-  # Creare baza de date
-  Creare baza de date
+ 
+  ### Creare baza de date
+  
         CREATE DATABASE  Bookstore;
 
         #Folosirea bazei de date create
