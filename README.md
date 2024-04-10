@@ -288,7 +288,7 @@ Afisarea cărților după autor și prețul mediu al cărților pentru fiecare a
       FROM Books
       GROUP BY Author;
 
-Afisarea clientilor care au comandat cel putin 3 carti
+Afisarea clientilor care au comandat cel putin 2 carti
 
       SELECT Customers.First_Name, Customers.Last_Name
       FROM Customers
