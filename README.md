@@ -57,9 +57,11 @@ Creare baza de date
   
          CREATE DATABASE  Bookstore;
 Folosirea bazei de date create
+
          USE Bookstore;
 
 Creare tabela pentru informatii despre carti  
+
          CREATE TABLE  Books (
          ID INT AUTO_INCREMENT PRIMARY KEY,
          Author VARCHAR(100),
@@ -67,7 +69,8 @@ Creare tabela pentru informatii despre carti
          Type_Books VARCHAR(100)
          );
 
-       #Creare tabela pentru informatii despre clienti  
+Creare tabela pentru informatii despre clienti  
+
         CREATE TABLE Customers (
         ID INT AUTO_INCREMENT PRIMARY KEY,
         Book_id INT,
@@ -77,7 +80,8 @@ Creare tabela pentru informatii despre carti
         FOREIGN KEY (Book_id) REFERENCES Books(ID)
         );
 
-       #Creare tabela pentru informatii despre comenzi
+Creare tabela pentru informatii despre comenzi
+
         CREATE TABLE Orders (
         ID INT AUTO_INCREMENT PRIMARY KEY,
         Customer_id INT,
@@ -87,7 +91,8 @@ Creare tabela pentru informatii despre carti
         FOREIGN KEY (Customer_id) REFERENCES Customers(ID)
         );
 
-      #Creare tabela pentru informatii despre abonamente
+Creare tabela pentru informatii despre abonamente
+
        CREATE TABLE  Subscription (
        ID INT AUTO_INCREMENT PRIMARY KEY,
        Start_Date DATE,
@@ -96,11 +101,11 @@ Creare tabela pentru informatii despre carti
        FOREIGN KEY (Customer_id) REFERENCES Customers(ID)
        );
 
-  After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
+After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
 
-       #Instructiuni ALTER
+Instructiuni ALTER
 
-       #Adaugam coloane
+Adaugam coloane
         ALTER TABLE Subscription ADD COLUMN VIP bool;
         ALTER TABLE Books ADD COLUMN Release_Year int;
 
