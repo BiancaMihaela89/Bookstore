@@ -214,7 +214,7 @@ Afisare informatii despre carti care au un titlu care incepe cu litera 'A'
 
        SELECT * FROM Books WHERE Title LIKE 'A%';
 
-Afisare carti  folosind paranteze sa prioritizam
+Afisare carti folosind paranteze sa prioritizam
 
        SELECT * FROM Books;
        SELECT * FROM Books
@@ -230,7 +230,7 @@ Afisare clienti care nu au abonament VIP
       SELECT * FROM Customers
       WHERE ID NOT IN (SELECT Customer_Id FROM Customer_Subscription WHERE VIP = true);
 
-Afisare informatii despre clienti care au un nume de familie Popescu
+Afisare informatii despre clientii care au un nume de familie Popescu
 
       SELECT * FROM Customers WHERE Last_Name = 'Popescu';
 
@@ -264,6 +264,7 @@ Afisare informatii folosind right join
       ON Customer_Subscription.Customer_id = Customers.ID;
 
 Functii Agregate
+<br>
 Calcularea sumei totale a preturilor pentru toate comenzile
 
       SELECT SUM(Price * Quantity) AS Total_Price FROM Books
