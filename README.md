@@ -288,12 +288,13 @@ Afisarea cărților după autor și prețul mediu al cărților pentru fiecare a
       FROM Books
       GROUP BY Author;
 
-Afisarea clienților care au plasat între 1 și 5 comenzi
+Afisarea clientilor care au comandat cel putin 3 carti
 
-      SELECT Customer_id, COUNT(*) AS Total_Orders
-      FROM Orders
-      GROUP BY Customer_id
-      HAVING Total_Orders BETWEEN 1 AND 5;
+      SELECT Customers.First_Name, Customers.Last_Name
+      FROM Customers
+      JOIN Orders ON Customers.ID = Orders.Customer_id
+      GROUP BY Customers.ID
+      HAVING COUNT(Orders.ID) >= 2;
 
 Afisarea comenzilor care au o valoare totala mai mare de 20
 
