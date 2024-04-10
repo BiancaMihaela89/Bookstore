@@ -30,7 +30,7 @@ The Bookstore database is designed to manage the operations of a bookstore, incl
 | Price|    |      |    |
 
   
-You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them.
+You can find below the database schema that was generated through Reverse Engineer which contains all the tables and the relationships between them.
 
 
 ![EEG Diagram](https://github.com/BiancaMihaela89/Bookstore/assets/149070909/4ed239df-0f74-4277-aef7-a07a1b5e6554)
@@ -56,11 +56,10 @@ These links allow for a coherent integration of data between tables and facilita
 Creare baza de date
   
          CREATE DATABASE  Bookstore;
-
-        #Folosirea bazei de date create
+Folosirea bazei de date create
          USE Bookstore;
 
-        #Creare tabela pentru informatii despre carti  
+Creare tabela pentru informatii despre carti  
          CREATE TABLE  Books (
          ID INT AUTO_INCREMENT PRIMARY KEY,
          Author VARCHAR(100),
